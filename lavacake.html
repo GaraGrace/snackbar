@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Ice Cream - SnackBar</title>
+    <link rel="stylesheet" href="order.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <h1 class="logo">SnackBar</h1>
+            <ul class="menu-box">
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="index.html">เมนู</a></li>
+                <li><a href="index.html">เกี่ยวกับพวกเรา</a></li>
+                <li><a href="index.html">ติดต่อ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Order Ice Cream Section -->
+    <section id="order-ice-cream" class="order">
+        <div class="container">
+            <div class="order-content">
+                <div class="order-image">
+                    <img src="cake.png" alt="Ice Cream">
+                </div>
+                <div class="order-form">
+                    <h2>สั่งซื้อ เค้กลาวา</h2>
+                    <form action="bit.html" method="post">
+                        <input type="hidden" name="item" value="ไอศรีม">
+                        <input type="hidden" name="price" value="55">
+                        <div class="order-item">
+                            <label for="quantity">จำนวน (฿89 ต่อชิ้น):</label>
+                            <input type="number" id="quantity" name="quantity" min="0" value="0">
+                        </div>
+
+                        <!-- Payment Method Selection -->
+                        <div class="order-item">
+                            <p>วิธีการชำระเงิน:</p>
+                            <div class="payment-methods">
+                                <label>
+                                    <input type="radio" name="payment" value="เก็บเงินปลายทาง">
+                                    เก็บเงินปลายทาง
+                                </label>
+                                <label>
+                                    <input type="radio" name="payment" value="QR พร้อมเพย์">
+                                    QR พร้อมเพย์
+                                </label>
+                                <label>
+                                    <input type="radio" name="payment" value="บัตรเครดิต/เดบิต">
+                                    บัตรเครดิต/เดบิต
+                                </label>
+                                <label>
+                                    <input type="radio" name="payment" value="TrueMoney Wallet">
+                                    TrueMoney Wallet
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn">ส่งคำสั่งซื้อ</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 SnackBar. All rights reserved.</p>
+            <p>Kaoniewji Development.</p>
+        </div>
+    </footer>
+</body>
+</html>

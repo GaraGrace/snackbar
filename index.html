@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnackBar</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <h1 class="logo">SnackBar</h1>
+            <ul>
+                <li><a href="#home">หน้าแรก</a></li>
+                <li><a href="#menu">เมนู</a></li>
+                <li><a href="#about">เกี่ยวกับพวกเรา</a></li>
+                <li><a href="#contact">ติดต่อ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>ยินดีต้อนรับเข้าสู่ร้าน SnackBar</h2>
+            <p>สามารถกดสั่งสือเมนูของพวกเราได้เลย</p>
+            <a href="#menu" class="btn">ดูเมนู</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>เมนูของพวกเรา</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="icecream.png" alt="Ice Cream" class="menu-image">
+                    <h3>ไอศรีม</h3>
+                    <span>฿55</span>
+                    <button class="btn-order" onclick="window.location.href='icecream.html'">สั่งซื้อ</button>
+                </div>
+                <div class="menu-item">
+                    <img src="croissant.png" alt="Croissant" class="menu-image">
+                    <h3>ครัวซองออริจินัล</h3>
+                    <span>฿135</span>
+                    <button class="btn-order" onclick="window.location.href='croissant.html'">สั่งซื้อ</button>
+                </div>
+                <div class="menu-item">
+                    <h3></h3>
+                    <h3></h3>
+                    <img src="eggtart.png" alt="Egg Tart" class="menu-image">
+                    <h3>ทาสไข่</h3>
+                    <span>฿25</span>
+                    <button class="btn-order" onclick="window.location.href='eggtart.html'">สั่งซื้อ</button>
+                </div>
+                <div class="menu-item">
+                    <img src="tea.png" alt="Tea" class="menu-image">
+                    <h3>ชานม</h3>
+                    <span>฿60</span>
+                    <button class="btn-order" onclick="window.location.href='tea.html'">สั่งซื้อ</button>
+                </div>
+                <div class="menu-item">
+                    <img src="lavacake.png" alt="Lava Cake" class="menu-image">
+                    <h3>เค้กลาวา</h3>
+                    <span>฿89</span>
+                    <button class="btn-order" onclick="window.location.href='lavacake.html'">สั่งซื้อ</button>
+                </div>
+                <div class="menu-item">
+                    <h3></h3>
+                    <img src="brownie.png" alt="Brownie" class="menu-image">
+                    <h3>บราวนี่หน้าฝอยทอง</h3>
+                    <span>฿50</span>
+                    <button class="btn-order" onclick="window.location.href='brownie.html'">สั่งซื้อ</button>
+                </div>
+                <div class="menu-item">
+                    <img src="cake.png" alt="Choco Cake" class="menu-image">
+                    <h3>เค้กช็อกโกแลตกล้วย</h3>
+                    <p>ส่วนผสมทำมาจากไวน์นะคะ</p>
+                    <span>฿149</span>
+                    <button class="btn-order" onclick="window.location.href='chococake.html'">สั่งซื้อ</button>
+                </div>
+                <!-- Add more menu items here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>เกี่ยวกับร้านพวกเรา</h2>
+            <p>ร้านพวกเราจะเป็นร้าน Bakery สไตล์ญี่ปุ่นและแปลกใหม่ สามารถสั่งไปลองทานกันได้นะคะ</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>ติดต่อพวกเรา</h2>
+            <form action="#">
+                <label for="name">ชื่อ:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">อีเมล:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">ข้อมูลที่อยากบอก:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit" class="btn">ส่ง</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 SnackBar. All rights reserved.</p>
+            <p>Kaoniewji Development.</p>
+        </div>
+    </footer>
+</body>
+</html
